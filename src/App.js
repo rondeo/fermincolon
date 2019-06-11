@@ -4,6 +4,10 @@ import Header from './components/Header/Header';
 import Grid from '@material-ui/core/Grid'
 import { Paper } from '@material-ui/core';
 import Fermin from './components/Fermin/Fermin';
+import papibeisbol from './images/papibeisbol.jpg';
+import fermincolon from './images/fermincolon.jpg';
+import italy from './images/italy.jpg';
+import hassan from './images/hassan.jpg';
 
 
 function App() {
@@ -92,7 +96,53 @@ function App() {
         </Paper>
         </Grid>
         <Grid item xs={1} />
+        <Grid item xs={2} />
+        <Grid item xs={8} >
+          <div>
+          <Paper>
+            </Paper>
+          </div>
         </Grid>
+        <Grid item xs={2} />
+        </Grid>
+        <Grid container spacing={24} >
+          <Grid item xs={12} >
+            <div className="middlespace">
+              <div className="spacerdiv">
+                <p>Interests:</p>
+                <Grid container spacing={24}
+                direction="row"
+                justify="flex-start"
+                alignItems="center" >
+                <Grid item xs={3} >
+                <h1>Beisbol</h1>
+                <img src={papibeisbol} alt="beisbol" height="400" width="400" className="interestpictures" />
+                </Grid>
+                <Grid item xs={1} />
+                <Grid item xs={3}>
+                <h1>Travel</h1>
+                <img src={italy} alt="Wedding" height="400" width="400" className="interestpictures" />
+                </Grid>
+                <Grid item xs={1} />
+                <Grid item xs={3}>
+                <h1>Celebrations</h1>
+                <img src={fermincolon} alt="Wedding" height="400" width="400" className="interestpictures" />
+                </Grid>
+                </Grid>
+              </div>
+            </div>
+          </Grid>
+        </Grid>
+      <Grid container spacing={24}>
+        <Grid item xs={2} />
+        <Grid item xs={8} >
+          <Paper className="papercolors">
+            <p>I revel in life and love to be out on the Baseball field. The game has enchanted me since my father showed me on the Island of Puerto Rico</p>
+            <p>My wonderful family brings me joy and I appreciate the strong and intellegent people that my children have grown into. I am now a grandfather and cannot wait to see the next generation of my family tree grow from the lessons and guidance that I can teach them.</p><img src={hassan} height="100" width ="100" alt="hassan" ></img>
+          </Paper>
+        </Grid>
+        <Grid item xs={2} />
+      </Grid>
       </div>
       </header>
     </div>

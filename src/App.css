@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: linear-gradient(to bottom ,#18aaf3,#00e5ff);
+  background-image: linear-gradient(to right ,#18aaf3,#80deea);
   color: #3f51b5;
 }
 a{
@@ -68,6 +68,12 @@ li{
   color:#212121;
   font-family: Trajan Pro;
   font-size: 72px;
+}
+.interestpictures{
+  border-radius: 25px;
+}
+.middlespace{
+  background-image: linear-gradient(to right ,#18aaf3,#80deea)
 }
 .profilephoto{
   border-radius: 50px 50px / 50px;
