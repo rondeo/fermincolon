@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Grid from '@material-ui/core/Grid'
-import { Paper } from '@material-ui/core';
+import { Paper, Tooltip } from '@material-ui/core';
 import Fermin from './components/Fermin/Fermin';
 import papibeisbol from './images/papibeisbol.jpg';
 import fermincolon from './images/fermincolon.jpg';
@@ -96,10 +96,23 @@ function App() {
         </Paper>
         </Grid>
         <Grid item xs={1} />
+
+        {/*  */}
         <Grid item xs={2} />
         <Grid item xs={8} >
           <div>
-          <Paper>
+          <Paper className="papercolors">
+          <Tooltip title="Link to Work">
+          <p>Doctorate Work: <a href="https://scholarworks.rit.edu/theses/3025/" >A New Framework for an electrophotographic printer model</a></p>
+          </Tooltip>
+          <div className="educationlist">
+          <p>Education:</p>
+          <ul>
+            <li>PHD</li>
+            <li>First Masters</li>
+            <li>Second Masters</li>
+          </ul> 
+          </div> 
             </Paper>
           </div>
         </Grid>
@@ -115,18 +128,21 @@ function App() {
                 justify="flex-start"
                 alignItems="center" >
                 <Grid item xs={3} >
-                <h1>Beisbol</h1>
+                <Tooltip title="Beisbol" >
                 <img src={papibeisbol} alt="beisbol" height="400" width="400" className="interestpictures" />
+                </Tooltip>
                 </Grid>
                 <Grid item xs={1} />
                 <Grid item xs={3}>
-                <h1>Travel</h1>
+                <Tooltip title="Travel" >
                 <img src={italy} alt="Wedding" height="400" width="400" className="interestpictures" />
+                </Tooltip>
                 </Grid>
                 <Grid item xs={1} />
                 <Grid item xs={3}>
-                <h1>Celebrations</h1>
+                <Tooltip title="Celebrations" >
                 <img src={fermincolon} alt="Wedding" height="400" width="400" className="interestpictures" />
+                </Tooltip>
                 </Grid>
                 </Grid>
               </div>
@@ -138,7 +154,18 @@ function App() {
         <Grid item xs={8} >
           <Paper className="papercolors">
             <p>I revel in life and love to be out on the Baseball field. The game has enchanted me since my father showed me on the Island of Puerto Rico</p>
-            <p>My wonderful family brings me joy and I appreciate the strong and intellegent people that my children have grown into. I am now a grandfather and cannot wait to see the next generation of my family tree grow from the lessons and guidance that I can teach them.</p><img src={hassan} height="100" width ="100" alt="hassan" ></img>
+            <p>My three children, Ambar, Adriel, and Ulyses, who throughout this journey
+              metamorphosed from young adults into amazing human beings, remind me of the
+                true purpose in life, unconditional love.</p>
+            <p>To the most important person in my life, my wife Aida, I offer my unconditional thanks for your support. I know what you had to put up with. Now
+              we both have come to understand the challenges and sacrifices associated with
+              being a Ph.D. candidate or the companion of one. Without you, I would not
+              have been able to complete this process. I am grateful for your patience, love and
+              understanding. I also know that despite the pride that comes with completing
+              one of my childhood dreams, my life would be pointless without you, and that
+              I would trade everything in an instant to assure that we continue to spend our
+              lives together. Omaetoy!
+              </p><img src={hassan} height="100" width ="100" alt="hassan" ></img>
           </Paper>
         </Grid>
         <Grid item xs={2} />

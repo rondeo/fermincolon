@@ -5,7 +5,7 @@
 }
 a{
   text-decoration: none;
-  color: #1565c0;
+  color: #043772;
 }
 li{
   list-style-type: none
@@ -63,6 +63,9 @@ border:1px solid#0d47a1;
 li{
   color: #1565c0; 
 }
+.educationlist{
+  text-align: center;
+}
 .fermin{
   text-align: center;
   color:#212121;
@@ -95,4 +98,5 @@ li{
   background-image: linear-gradient(to bottom ,#18aaf3,#18aaf3);
   opacity: .9;
   font-family: Trajan Pro;
+  color: red;
 }
