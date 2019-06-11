@@ -31,3 +31,8 @@
     transform: rotate(360deg);
   }
 }
+.profilephoto{
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+}
