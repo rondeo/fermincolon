@@ -9,7 +9,6 @@ const Header = () => {
                 <div>
                     <Grid item xs={3} >
                        <PhotoComponent />
-                       <p>hello</p>
                     </Grid>
                     <Grid item xs={7} >
                         {/* blank space fopr filling */}

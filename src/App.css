@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(to bottom, #e0f2f1,#81d4fa );
 }
 
 .App-logo {
@@ -9,7 +10,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url('./images/Backgroundtropical.jpg');
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -32,7 +34,12 @@
   }
 }
 .profilephoto{
-  height: 150px;
-  width: 150px;
-  border-radius: 75px;
+  border-radius: 10px 100px / 120px;
+}
+.profilephotobackground{
+  width: 350px;
+  height: 350px;
+  background:#a7ffeb;
+  border-radius: 50%;
+  align-content: center
 }
