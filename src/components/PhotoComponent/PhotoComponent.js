@@ -18,7 +18,7 @@ const PhotoComponent = () => {
                     <div>&nbsp;</div>
                     </Grid>
                     <Grid item xs={12} >
-                    <img src={profileimage} alt="face" className="profilephoto" width="200" height="270"/>
+                    <img src={profileimage} alt="face" className="profilephoto" width="200" height="260"/>
                     </Grid>
                     </Grid>
                     </div>

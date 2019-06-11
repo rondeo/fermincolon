@@ -5,18 +5,14 @@ import PhotoComponent from '../PhotoComponent/PhotoComponent';
 const Header = () => {
     return (
         <div>
-            <Grid container spacing={24} >
-                <div>
+            <Grid container spacing={24}>
                     <Grid item xs={3} >
                        <PhotoComponent />
                     </Grid>
-                    <Grid item xs={7} >
-                        {/* blank space fopr filling */}
+                    <Grid item xs={7}  >
                     </Grid>
-                    <Grid item xs={2} >
-                        {/* Contacts and links */}
+                    <Grid item xs={3} >
                     </Grid>
-                </div>
             </Grid>
         </div>
     );
