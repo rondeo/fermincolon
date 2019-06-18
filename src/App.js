@@ -8,12 +8,18 @@ import papibeisbol from './images/papibeisbol.jpg';
 import fermincolon from './images/fermincolon.jpg';
 import italy from './images/italy.jpg';
 import hassan from './images/hassan.jpg';
-
+import UPR from './images/UPR.jpg';
+import Acuity_institute from './images/Acuity_Institute.png';
+import taubetapirium from './images/taubetapirum.jpg';
+import NNA from './images/NNA.png';
 
 function App() {
   return (
     <div className="App">
       <div className="opacitybox">
+                    <div>
+                      <p className="underconstruction">This site is under construction</p>
+                    </div>
       <Grid container
       spacing={24} 
       direction="row"
@@ -24,8 +30,9 @@ function App() {
                     </Grid>
                     <Grid item xs={6} >
                     <Fermin />
-                    <p className="quote" >Quality is not an act, it is a habit.</p>
+                    <p className="quote " >Quality is not an act, it is a habit.</p>
                     <p className="quote" >-Aristotle</p>
+  
                     </Grid>
                     <Grid item xs={1} />
                     <Grid item xs={2}
@@ -57,7 +64,7 @@ function App() {
         <Paper className="papercolors">
         <h1>Who I am:</h1>
         <p>
-          I am Scientist that enjoys data analysys and using systems of efficiency to break down a a problem and finding the most elegant and outright solution. I value analytical thinking and using rational discourse.
+          I am Scientist that enjoys data analysis and using systems of efficiency to break down a a problem and finding the most elegant and outright solution. I value analytical thinking and using rational discourse.
         </p>
         </Paper>
         </Grid>
@@ -79,16 +86,22 @@ function App() {
           <li><img src="https://images.localist.com/photos/558629/huge/ef5bbd4e5dce05e18f5a12b414de0321288ef747.jpg"  alt="UofR" height="200px" width="200px" /></li>
           </Grid>
           <Grid item xs={6} >
-          <li><img src="https://www.iassc.org/wp-content/uploads/2017/07/IASSC-Certification-Badge-250x250.png"  alt="sixsigma" height="200px" width="200px" /></li>
+          <li><img src={Acuity_institute}  alt="sixsigma" height="200px" width="200px" /></li>
           </Grid>
           <Grid item xs={6} >
           <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5IaQ_l6gPewl9f42q91B20Ysovz2M9rpcg9teWNF8D87M-yzR"  alt="RIT" height="200px" width="200px" /></li>
           </Grid>
           <Grid item xs={6} >
-          <li><img src="https://upload.wikimedia.org/wikipedia/en/3/39/Upr_logo.jpg"  alt="UPR" height="200px" width="200px" /></li>
+          <li><img src={UPR} alt="UPR" height="200px" width="200px" /></li>
           </Grid>
           <Grid item xs={6} >
           <li><img src="http://scholarmathtutoring.com/wp-content/uploads/2016/03/Logo2016-1-e1458933919449.jpg"  alt="smart" height="200px" width="200px" /></li>
+          </Grid>
+          <Grid item xs={6} >
+          <li><img src={taubetapirium}  alt="smart" height="200px" width="200px" /></li>
+          </Grid>
+          <Grid item xs={6} >
+          <li><img src={NNA}  alt="smart" height="200px" width="200px" /></li>
           </Grid>
           </Grid>
         </ul>
@@ -108,7 +121,7 @@ function App() {
           <div className="educationlist">
           <p>Education:</p>
           <ul>
-            <li>PHD</li>
+            <li>Ph.D.</li>
             <li>First Masters</li>
             <li>Second Masters</li>
           </ul> 
